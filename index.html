@@ -38,7 +38,7 @@
 
 		</script>
 	</head>
-	<body class="state1 background-100-e">
+	<body class="state1 background-100-e" onload="onLoad()">
 		<div class="ext-nav background-95-h page-transition">
 			<div class="view half-height">
 				<img alt class="bg static" src="images/placeholders/1920x1200-2.jpg" />
@@ -262,6 +262,9 @@
 						<h2>About</h2>
 						<p class="header-details"><span class="highlight">We Create</span> Awesome Stuff</p>
 						<p class="lead">We are <span class="highlight">Creative Team</span> located in Kalura, Bovlandia. Tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<select id="knownLanguage" style="width: 100%;">
+							<option value="-1">----Select Language----</option>
+						</select>
 						<div class="row">
 							<div class="col-md-4">
 								<div class="col-icon">
@@ -1073,6 +1076,7 @@
 		<script src="lib/prism/prism.js"></script>
 		<script src="lib/kwc/es6-promise.min.js"></script>
 		<script src="lib/kwc/nativescript-webview-interface.js"></script>
+		<script src="lib/kwc/index.js"></script>
 		<script>
 		(function()
 		{
